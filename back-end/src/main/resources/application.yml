@@ -1,0 +1,20 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: ecommerce-rest-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce_app
+    username: root
+    password: groot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#  security:
+#    jwt:
+#      secret: 5705a82920cee05ca634e8a82a2a11be30aa0d655c7b87a67d48b828e8e46144
+#      expiration-milliseconds: 604,800,000
